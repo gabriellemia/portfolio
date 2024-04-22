@@ -1,3 +1,8 @@
+.about-section {
+  text-align: center;
+  padding-top: 120px;
+}
+
 .profileImage {
   display: flex;
   justify-content: center;
@@ -6,9 +11,4 @@
 
 .intro {
   font-family: "Rock Salt", cursive;
-  text-align: center;
-}
-
-.about-section {
-  text-align: center;
 }
