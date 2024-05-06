@@ -1,0 +1,13 @@
+.project-title {
+  font-family: "Rock Salt", cursive;
+}
+
+.project-section {
+  margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    text-align: center;
+  }
+}
