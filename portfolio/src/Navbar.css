@@ -7,7 +7,7 @@
   height: 80px;
   align-items: center;
   padding: 10px 20px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-color: black;
   color: white;
 }
@@ -57,7 +57,7 @@
     overflow: hidden;
     padding-right: 20px;
     padding-top: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-bottom: 20px;
   }
 
