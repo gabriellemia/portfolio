@@ -3,12 +3,14 @@
 import "./App.css";
 import Navbar from "./Navbar.tsx";
 import About from "./About.tsx";
+import ProjectBtn from "./ProjectBtn.tsx";
 
 function App() {
   return (
     <>
       <Navbar />
       <About />
+      <ProjectBtn />
     </>
   );
 }

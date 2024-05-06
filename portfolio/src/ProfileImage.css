@@ -1,3 +1,9 @@
 .profile {
-  width: 100px;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    width: 200px;
+  }
 }
