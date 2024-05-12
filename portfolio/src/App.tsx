@@ -9,10 +9,14 @@ import Projects from "./Projects.tsx";
 function App() {
   return (
     <>
-      <Navbar />
-      <About />
-      <ProjectBtn />
-      <Projects />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <About />
+        <ProjectBtn />
+        <Projects />
+      </main>
     </>
   );
 }

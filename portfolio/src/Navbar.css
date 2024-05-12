@@ -1,21 +1,30 @@
+.header {
+  display: flex;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
   position: fixed;
   right: 0;
-  left: 0;
-  height: 80px;
+  /* height: 80px; */
   align-items: center;
-  padding: 10px 20px;
-  /* margin-top: 20px; */
-  background-color: black;
-  color: white;
+  /* padding: 10px 20px; */
+  margin-top: 20px;
+  color: black;
 }
 
-.main-title h1 {
+/* .main-title h1 {
+  margin-top: 20px;
   margin-left: 40px;
   font-size: 20px;
   font-family: "Rock Salt", cursive;
+} */
+
+.head-logo img {
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .menu {
@@ -26,6 +35,7 @@
 .menu ul {
   list-style-type: none;
   margin-right: 40px;
+  margin-top: 20px;
   padding: 0;
   display: flex;
 }
@@ -42,7 +52,26 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .head-logo img {
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  .navigation {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+    margin-top: 0;
+  }
   .menu {
     display: none;
   }
@@ -50,14 +79,14 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
-    right: 0;
-    background-color: black;
-    color: white;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
     overflow: hidden;
-    padding-right: 20px;
     padding-top: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding-bottom: 20px;
   }
 
@@ -72,19 +101,22 @@
     text-align: end;
   }
 
+  .menu ul {
+    margin-right: 10px;
+  }
+
   .hamburger {
     display: block;
     cursor: pointer;
     text-align: end;
+    padding-left: 20px;
   }
 
   .fries {
     display: block;
     cursor: pointer;
     text-align: end;
-  }
-
-  .main-title h1 {
-    margin-left: 0;
+    /* padding-right: 10px; */
+    padding-top: 10px;
   }
 }

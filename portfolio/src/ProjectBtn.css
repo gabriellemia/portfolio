@@ -22,7 +22,7 @@
   box-shadow: 0.05em 0.05em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .project-btn {
     background: #1b9dbe;
     font-family: inherit;
@@ -39,7 +39,7 @@
   .btn-section {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .project-btn:hover {

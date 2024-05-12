@@ -2,6 +2,7 @@ import CloseFries from "./CloseFries";
 import Hamburger from "./Hamburger";
 import "./Navbar.css";
 import { useState } from "react";
+import logo from "./assets/logo-name.gif";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,24 +17,26 @@ function Navbar() {
 
   return (
     <>
-      <div className="navigation">
-        <div className="main-title">
-          <h1>Gabrielle Mia</h1>
+      <div className="header">
+        <div className="head-logo">
+          <img src={logo}></img>
         </div>
-        <div className={`menu ${menuOpen ? "open" : ""}`}>
-          <div className="fries" onClick={closeMenu}>
-            <CloseFries />
+        <div className="navigation">
+          <div className={`menu ${menuOpen ? "open" : ""}`}>
+            <div className="fries" onClick={closeMenu}>
+              <CloseFries />
+            </div>
+            <ul className="menuList">
+              <li>About</li>
+              <li>Projects</li>
+              <li>Tech Stack</li>
+              <li>Contact</li>
+            </ul>
           </div>
-          <ul className="menuList">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Tech Stack</li>
-            <li>Contact</li>
-          </ul>
-        </div>
 
-        <div className="hamburger" onClick={toggleMenu}>
-          <Hamburger />
+          <div className="hamburger" onClick={toggleMenu}>
+            <Hamburger />
+          </div>
         </div>
       </div>
     </>
