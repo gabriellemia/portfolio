@@ -1,13 +1,72 @@
 .project-title {
   font-family: "Rock Salt", cursive;
+  padding-bottom: 20px;
+  font-size: 25px;
 }
 
 .project-section {
   margin-top: 70px;
 }
 
+.chat-section {
+  display: flex;
+  align-items: center;
+  background: white;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.chat-section:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.chat-section:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.chat-title {
+  font-weight: 600;
+}
+
+.chat-section p {
+  padding-right: 30px;
+}
+
+.chat-video {
+  width: 300px;
+}
+
+.personal h2,
+.collab h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1024px) {
   .project-title {
     text-align: center;
+  }
+
+  .chat-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-section p {
+    margin-bottom: 20px;
+    text-align: justify;
+    padding-right: 0;
   }
 }

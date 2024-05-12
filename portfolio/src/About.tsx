@@ -11,9 +11,9 @@ function About() {
         <div className="text-section">
           <h1 className="intro">Hi there, I'm Gaby!</h1>
           <p className="about-text">
-            Greetings from London! I'm a junior full-stack developer with a unique background spanning biomedical
-            research and outdoor education. While my academic journey began with a degree in Wildlife Photography, my
-            path eventually led me to the world of coding. <br />
+            I'm a London based junior full-stack developer with a unique background spanning biomedical research and
+            outdoor education. While my academic journey began with a degree in Wildlife Photography, my path eventually
+            led me to the world of coding. <br />
             During the "Great Pandemic," I found myself yearning for a new challenge and a chance to make a difference.
             Despite having no prior tech experience, I was drawn to the problem-solving and creative aspects of coding,
             so I decided to take the plunge. <br />
