@@ -29,10 +29,10 @@
     padding: 0.6em 1.3em;
     font-weight: 600;
     font-size: 20px;
-    color: black;
-    border: 3px solid black;
+    color: f9f4da;
+    border: 3px solid f9f4da;
     border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
+    box-shadow: 0.15em 0.15em f9f4da;
     cursor: pointer;
     margin: 0;
   }
@@ -44,7 +44,7 @@
 
   .project-btn:hover {
     transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
+    box-shadow: 0.15em 0.15em f9f4da;
   }
 
   .project-btn:active {

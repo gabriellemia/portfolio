@@ -2,6 +2,15 @@
   display: flex;
 }
 
+.head-title {
+  display: flex;
+  justify-content: flex-start;
+  color: #1b9dbe;
+  font-family: "Rock Salt", cursive;
+  font-size: 20px;
+  margin: 30px;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -14,11 +23,11 @@
   color: #f9f4da;
 }
 
-.head-logo img {
+/* .head-logo img {
   width: 200px;
   margin-left: 40px;
   margin-top: 20px;
-}
+} */
 
 .menu {
   display: flex;

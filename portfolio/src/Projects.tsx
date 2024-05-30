@@ -30,6 +30,7 @@ function Projects() {
             <br />
             <strong>Tech stack</strong>
             <br />
+            <br />
             <i className="devicon-nextjs-plain colored"></i>
             <i className="devicon-react-original colored"></i>
             <i className="devicon-css3-plain colored"></i>

@@ -18,8 +18,9 @@ function Navbar() {
   return (
     <>
       <div className="header">
-        <div className="head-logo">
-          <img src={logo}></img>
+        <div className="head-title">
+          <h1>Gabrielle Mia</h1>
+          {/* <img src={logo}></img> */}
         </div>
         <div className="navigation">
           <div className={`menu ${menuOpen ? "open" : ""}`}>
