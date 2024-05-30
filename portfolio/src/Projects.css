@@ -11,23 +11,24 @@
 .chat-section {
   display: flex;
   align-items: center;
-  background: white;
+  background: #f9f4da;
   font-family: inherit;
   padding: 0.6em 1.3em;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 25px;
   color: black;
-  border: 3px solid black;
+  border: 3px solid #199dbd;
   border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em;
+  box-shadow: 0.3em 0.3em #199dbd;
   cursor: pointer;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .chat-section:hover {
   transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em;
+  box-shadow: 0.3em 0.3em #199dbd;
 }
 
 .chat-section:active {
@@ -39,9 +40,23 @@
   font-weight: 600;
 }
 
+.chat-section strong {
+  font-weight: 600;
+}
+
 .chat-section p {
   padding-right: 30px;
   font-weight: 400;
+}
+
+.chat-section i {
+  font-size: 40px;
+  padding: 5px;
+}
+
+.strapi {
+  width: 40px;
+  margin-right: 10px;
 }
 
 .chat-video {

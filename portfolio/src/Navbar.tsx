@@ -2,7 +2,7 @@ import CloseFries from "./CloseFries";
 import Hamburger from "./Hamburger";
 import "./Navbar.css";
 import { useState } from "react";
-import logo from "./assets/logo-name.gif";
+import logo from "./assets/portfolio-logo-nobg.gif";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
