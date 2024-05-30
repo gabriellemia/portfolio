@@ -24,6 +24,27 @@ Design and build a website to showcase my tech skills and some of the projects I
 
 https://gabriellemia.me
 
+## Plan
+
+- Single page, scrollable site.
+- Hamburger menu (top right) expand to single line, full menu in desktop.
+- Name/logo? (top left)
+- About section
+    - Brief introduction
+    - Profile image
+- Projects section
+    - Each project on a clickable button
+    - Each button to include info about project, idea, tech stack, challenges
+    - Animations on hover?
+- Teck Stack section
+    - Logos for technologies
+- Info section
+    - Links to GiHub
+    - Events attended
+    - Any other relevant info
+- Footer with contact/social section
+    - Link to LinkedIn, Email, Twitter, GitHub
+
 ## Basic Wireframe
 
 I started to create a wireframe to get ideas for layout flowing.  The project has strayed from the original design a fair bit since then but this is where it started
