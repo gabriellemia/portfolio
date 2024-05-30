@@ -9,6 +9,10 @@ Design and build a website to showcase my tech skills and some of the projects I
 
 </div>
 
+## Domain
+
+https://gabriellemia.me
+
 ## Tech stack
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -19,10 +23,6 @@ Design and build a website to showcase my tech skills and some of the projects I
 ## Deploy
 
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
-
-## Domain
-
-https://gabriellemia.me
 
 ## Plan
 
