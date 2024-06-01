@@ -46,6 +46,22 @@
   margin-left: 20px; /* Adjust the spacing between menu items */
 }
 
+.menuList a {
+  text-decoration: none;
+  color: #f9f4da;
+}
+
+.menuList a:hover {
+  color: #1b9dbe;
+}
+
+.menuList li.active a {
+  color: #f9f4da;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-color: #1b9dbe;
+}
+
 .hamburger {
   display: none;
 }
@@ -59,10 +75,10 @@
     display: flex;
   }
 
-  .head-logo img {
+  /* .head-logo img {
     width: 150px;
     margin-left: 40px;
-  }
+  } */
 
   .navigation {
     background-color: #0f0d0e;

@@ -4,8 +4,11 @@ import "./Navbar.css";
 import { useState } from "react";
 // import logo from "./assets/portfolio-logo-nobg.gif";
 
+type NavItem = "about" | "projects" | "tech" | "contact";
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState<NavItem | null>(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -13,6 +16,11 @@ function Navbar() {
 
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const handleItemClick = (item: NavItem) => {
+    setActiveItem(item);
+    closeMenu();
   };
 
   return (
@@ -28,8 +36,16 @@ function Navbar() {
               <CloseFries />
             </div>
             <ul className="menuList">
-              <li>About</li>
-              <li>Projects</li>
+              <li className={activeItem === "about" ? "active" : ""}>
+                <a href="#about-section" onClick={() => handleItemClick("about")}>
+                  About
+                </a>
+              </li>
+              <li className={activeItem === "projects" ? "active" : ""}>
+                <a href="#project-section" onClick={() => handleItemClick("projects")}>
+                  Projects
+                </a>
+              </li>
               <li>Tech Stack</li>
               <li>Contact</li>
             </ul>

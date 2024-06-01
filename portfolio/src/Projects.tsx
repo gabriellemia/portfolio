@@ -6,7 +6,7 @@ import cloudinary from "./assets/cloudinary-icon.png";
 
 function Projects() {
   return (
-    <div className="project-section">
+    <div id="project-section">
       <h1 className="project-title">My Projects</h1>
       <div className="collab">
         <h2>Collaboration</h2>

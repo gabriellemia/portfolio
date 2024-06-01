@@ -4,7 +4,7 @@ import ProfileImage from "./ProfileImage";
 function About() {
   return (
     <>
-      <div className="about-section">
+      <div id="about-section">
         <div className="profileImage">
           <ProfileImage />
         </div>
