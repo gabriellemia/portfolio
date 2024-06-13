@@ -93,11 +93,11 @@ body {
   font-weight: 300;
   color: #f9f4da;
   background-color: #0f0d0e;
-  max-width: 1256px;
 }
 
 main {
   margin: 20px 150px;
+  max-width: 1256px;
 }
 
 @media (max-width: 1024px) {

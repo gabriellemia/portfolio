@@ -27,10 +27,10 @@
   margin-bottom: 30px;
 }
 
-.chat-section:hover {
+/* .chat-section:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.3em 0.3em #199dbd;
-}
+} */
 
 /* .chat-section:active {
   transform: translate(0.05em, 0.05em);
