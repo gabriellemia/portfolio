@@ -6,6 +6,7 @@ import About from "./About.tsx";
 import ProjectBtn from "./ProjectBtn.tsx";
 import Projects from "./Projects.tsx";
 import TechStack from "./TechStack.tsx";
+import Social from "./Social.tsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Projects />
         <TechStack />
+        <Social />
       </main>
     </>
   );
