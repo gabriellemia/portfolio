@@ -29,10 +29,10 @@
     padding: 0.6em 1.3em;
     font-weight: 600;
     font-size: 20px;
-    color: f9f4da;
-    border: 3px solid f9f4da;
+    color: #f9f4da;
+    border: 3px solid #f9f4da;
     border-radius: 0.4em;
-    box-shadow: 0.15em 0.15em f9f4da;
+    box-shadow: 0.15em 0.15em #f9f4da;
     cursor: pointer;
     margin: 0;
   }

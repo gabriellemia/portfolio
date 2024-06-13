@@ -46,7 +46,11 @@ function Navbar() {
                   Projects
                 </a>
               </li>
-              <li>Tech Stack</li>
+              <li className={activeItem === "tech" ? "active" : ""}>
+                <a href="#tech-section" onClick={() => handleItemClick("tech")}>
+                  Tech Stack
+                </a>
+              </li>
               <li>Contact</li>
             </ul>
           </div>

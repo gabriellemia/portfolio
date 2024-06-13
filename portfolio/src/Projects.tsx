@@ -2,6 +2,7 @@ import "./Projects.css";
 import gabyGPT from "./assets/gabyGPT-record.mov";
 import BBVid from "./assets/BB-record.mov";
 import Button from "./Button.tsx";
+import githubImage from "./assets/icons8-github-128.png";
 // import strapi from "./assets/strapi-icon.png";
 // import cloudinary from "./assets/cloudinary-icon.png";
 
@@ -75,6 +76,15 @@ function Projects() {
             <source src={gabyGPT} type="video/mp4"></source>
           </video>
         </div>
+      </div>
+      <div className="more-section">
+        <p className="other-work">
+          I have a few more projects waiting in my GitHub, these are just a couple I plucked out of the mix. <br />
+          Please feel free to check out my other work.
+        </p>
+        <a href="https://github.com/gabriellemia?tab=repositories" target="_blank">
+          <img className="github-image" src={githubImage} alt="github logo" />
+        </a>
       </div>
     </div>
   );

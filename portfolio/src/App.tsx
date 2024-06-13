@@ -5,6 +5,7 @@ import Navbar from "./Navbar.tsx";
 import About from "./About.tsx";
 import ProjectBtn from "./ProjectBtn.tsx";
 import Projects from "./Projects.tsx";
+import TechStack from "./TechStack.tsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ProjectBtn />
         <About />
         <Projects />
+        <TechStack />
       </main>
     </>
   );

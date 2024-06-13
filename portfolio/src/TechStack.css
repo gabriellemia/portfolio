@@ -1,0 +1,24 @@
+#tech-section {
+  margin-top: 70px;
+}
+
+.next {
+  background-color: white;
+}
+
+.github {
+  background-color: white;
+}
+
+.tech-title {
+  font-family: "Rock Salt", cursive;
+  padding-bottom: 20px;
+  font-size: 25px;
+  color: #199dbd;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

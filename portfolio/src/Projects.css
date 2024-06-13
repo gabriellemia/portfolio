@@ -2,6 +2,7 @@
   font-family: "Rock Salt", cursive;
   padding-bottom: 20px;
   font-size: 25px;
+  color: #199dbd;
 }
 
 #project-section {
@@ -80,7 +81,28 @@
   max-width: 800px;
 }
 
-@media (max-width: 1024px) {
+.github-image {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.github-image:hover {
+  transform: translate(-0.1em, -0.1em);
+}
+
+.github-image:active {
+  transform: translate(0.1em, 0.1em);
+}
+
+.more-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 720px) {
   .project-title {
     text-align: center;
   }
@@ -94,5 +116,15 @@
     margin-bottom: 20px;
     text-align: justify;
     padding-right: 0;
+  }
+
+  .buttons-container {
+    margin-bottom: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chat-video {
+    width: 250px;
   }
 }
