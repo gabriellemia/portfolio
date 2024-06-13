@@ -1,8 +1,9 @@
 import "./Projects.css";
 import gabyGPT from "./assets/gabyGPT-record.mov";
 import BBVid from "./assets/BB-record.mov";
-import strapi from "./assets/strapi-icon.png";
-import cloudinary from "./assets/cloudinary-icon.png";
+import Button from "./Button.tsx";
+// import strapi from "./assets/strapi-icon.png";
+// import cloudinary from "./assets/cloudinary-icon.png";
 
 function Projects() {
   return (
@@ -11,13 +12,15 @@ function Projects() {
       <div className="collab">
         <h2>Collaboration</h2>
         <div className="chat-section">
-          <p>
-            <span className="chat-title">Birmingham Business Website</span>
-            <br />
-            Final project at School of Code with real stakeholders. <br />
-            In our team of six, we were partnered with Birmingham Business Magazine to help them optimise their online
-            presence.
-            <br />
+          <div className="textAndButtons">
+            <p>
+              <span className="box-title">Birmingham Business Website</span>
+              <br />
+              Final project at School of Code with real stakeholders. <br />
+              In our team of six, we were partnered with Birmingham Business Magazine to help them optimise their online
+              presence. <br /> Over 4 weeks we built a modernised, responsive website with improved SEO and
+              accessibility and a simple to use content management system.
+              {/* <br />
             <strong>Problem</strong>
             <br />
             Birmingham Business magazines website is outdated and not engaging, posing significant challenges for both
@@ -26,8 +29,8 @@ function Projects() {
             <br />
             <strong>Solution</strong>
             <br />A revamped platform that prioritises user engagement, accessibility, and content management efficiency
-            while also optimising SEO to drive more traffic, transforming the digital experience.
-            <br />
+            while also optimising SEO to drive more traffic, transforming the digital experience. */}
+              {/* <br />
             <strong>Tech stack</strong>
             <br />
             <br />
@@ -38,8 +41,13 @@ function Projects() {
             <i className="devicon-jest-plain colored"></i>
             <i className="devicon-vercel-original colored"></i>
             <img className="strapi" src={strapi} alt="strapi-icon" />
-            <img src={cloudinary} alt="cloudinary-icon" />
-          </p>
+            <img src={cloudinary} alt="cloudinary-icon" /> */}
+            </p>
+            <div className="buttons-container">
+              <Button url="https://birmingham-biz-kappa.vercel.app/" label="Live site" />
+              <Button url="https://github.com/gabriellemia/birmingham-biz" label="GitHub Repo" />
+            </div>
+          </div>
           <video className="chat-video" controls autoPlay>
             <source src={BBVid} type="video/mp4"></source>
           </video>
@@ -49,14 +57,20 @@ function Projects() {
         <h2>Personal</h2>
 
         <div className="chat-section">
-          <p>
-            <span className="chat-title">Chatbot</span>
-            <br />
-            During our data and AI experience week at the School of Code, I did a bit of research on how I could
-            implement LLM's into my current projects. I decided to create a basic chatbot as a stand alone app so I
-            could understand how everything works and what is needed in it's simplest form. I used next.js, vercel SDK
-            and the OpenAI api.
-          </p>
+          <div className="textAndButtons">
+            <p>
+              <span className="box-title">Chatbot</span>
+              <br />
+              During our data and AI experience week at the School of Code, I did a bit of research on how I could
+              implement LLM's into my current projects. <br />I decided to create a basic chatbot as a stand alone app
+              so I could understand how everything works and what is needed in it's simplest form. I used next.js,
+              vercel SDK and the OpenAI api.
+              <br />
+            </p>
+            <div className="buttons-container">
+              <Button url="https://github.com/gabriellemia/my-chatbot" label="GitHub Repo" />
+            </div>
+          </div>
           <video className="chat-video" controls autoPlay>
             <source src={gabyGPT} type="video/mp4"></source>
           </video>

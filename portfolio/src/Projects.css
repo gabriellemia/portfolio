@@ -31,13 +31,13 @@
   box-shadow: 0.3em 0.3em #199dbd;
 }
 
-.chat-section:active {
+/* .chat-section:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
-}
+} */
 
-.chat-title {
-  font-weight: 600;
+.box-title {
+  font-weight: 900;
 }
 
 .chat-section strong {
@@ -54,10 +54,10 @@
   padding: 5px;
 }
 
-.strapi {
+/* .strapi {
   width: 40px;
   margin-right: 10px;
-}
+} */
 
 .chat-video {
   width: 300px;
@@ -68,6 +68,16 @@
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.buttons-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.textAndButtons {
+  max-width: 800px;
 }
 
 @media (max-width: 1024px) {

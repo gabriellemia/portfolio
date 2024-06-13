@@ -21,9 +21,9 @@ function About() {
             resources like The Odin Project, I recently completed the School of Code's intensive 16-week bootcamp. This
             experience not only enhanced my technical skills but also prepared me for the demands of the industry,
             ensuring I'm ready to contribute effectively to any tech team. <br />
-            Beyond coding, I have a passion for literature and outdoor pursuits, including climbing, hiking, and
-            canoeing. I thrive on self-improvement and have taught myself various skills, from juggling to solving the
-            Rubik's Cube.
+            Beyond coding, I have a passion for literature (I love a good Dystopian if you have any recommendations!),
+            and outdoor pursuits, including climbing, hiking, and canoeing. I thrive on self-improvement and have taught
+            myself various skills, from juggling to solving the Rubik's Cube.
           </p>
         </div>
       </div>

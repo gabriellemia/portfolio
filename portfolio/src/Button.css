@@ -1,0 +1,23 @@
+.link-btn {
+  background: #1b9dbe;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0f0d0e;
+  border: 3px solid #0f0d0e;
+  border-radius: 0.4em;
+  box-shadow: 0.15em 0.15em #0f0d0e;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-btn:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #0f0d0e;
+}
+
+.link-btn:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
