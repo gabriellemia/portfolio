@@ -9,10 +9,28 @@
   padding-top: 20px;
 }
 
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .intro {
   font-family: "Rock Salt", cursive;
   padding-bottom: 20px;
   font-size: 25px;
+  overflow: hidden;
+  /* border-right: 0.15em solid #f9f4da; */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation:
+    typewriter 4s steps(30, end),
+    blink-caret 0.75s step-end infinite;
+  display: inline-block;
 }
 
 .text-section {

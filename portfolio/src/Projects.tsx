@@ -3,14 +3,55 @@ import gabyGPT from "./assets/gabyGPT-record.mov";
 import BBVid from "./assets/BB-record.mov";
 import Button from "./Button.tsx";
 import githubImage from "./assets/icons8-github-128.png";
+import { useEffect, useRef } from "react";
 // import strapi from "./assets/strapi-icon.png";
 // import cloudinary from "./assets/cloudinary-icon.png";
 
 function Projects() {
+  const collabRef = useRef<HTMLDivElement>(null);
+  const personalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const options = {
+      threshold: 0.5,
+    };
+
+    const callback: IntersectionObserverCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        } else {
+          entry.target.classList.remove("in-view");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    const currentCollabRef = collabRef.current;
+    const currentPersonalRef = personalRef.current;
+
+    if (currentCollabRef) {
+      observer.observe(currentCollabRef);
+    }
+    if (currentPersonalRef) {
+      observer.observe(currentPersonalRef);
+    }
+
+    return () => {
+      if (currentCollabRef) {
+        observer.unobserve(currentCollabRef);
+      }
+      if (currentPersonalRef) {
+        observer.unobserve(currentPersonalRef);
+      }
+    };
+  }, []);
+
   return (
     <div id="project-section">
       <h1 className="project-title">My Projects</h1>
-      <div className="collab">
+      <div className="collab burst-element" ref={collabRef}>
         <h2>Collaboration</h2>
         <div className="chat-section">
           <div className="textAndButtons">
@@ -21,28 +62,6 @@ function Projects() {
               In our team of six, we were partnered with Birmingham Business Magazine to help them optimise their online
               presence. <br /> Over 4 weeks we built a modernised, responsive website with improved SEO and
               accessibility and a simple to use content management system.
-              {/* <br />
-            <strong>Problem</strong>
-            <br />
-            Birmingham Business magazines website is outdated and not engaging, posing significant challenges for both
-            readers and editors alike. The lack of engagement tools and optimisation hinders the magazine's ability to
-            fully capitalise on its digital presence.
-            <br />
-            <strong>Solution</strong>
-            <br />A revamped platform that prioritises user engagement, accessibility, and content management efficiency
-            while also optimising SEO to drive more traffic, transforming the digital experience. */}
-              {/* <br />
-            <strong>Tech stack</strong>
-            <br />
-            <br />
-            <i className="devicon-nextjs-plain colored"></i>
-            <i className="devicon-react-original colored"></i>
-            <i className="devicon-css3-plain colored"></i>
-            <i className="devicon-railway-original black"></i>
-            <i className="devicon-jest-plain colored"></i>
-            <i className="devicon-vercel-original colored"></i>
-            <img className="strapi" src={strapi} alt="strapi-icon" />
-            <img src={cloudinary} alt="cloudinary-icon" /> */}
             </p>
             <div className="buttons-container">
               <Button url="https://birmingham-biz-kappa.vercel.app/" label="Live site" />
@@ -54,7 +73,7 @@ function Projects() {
           </video>
         </div>
       </div>
-      <div className="personal">
+      <div className="personal burst-element" ref={personalRef}>
         <h2>Personal</h2>
 
         <div className="chat-section">
@@ -82,7 +101,7 @@ function Projects() {
           I have a few more projects waiting in my GitHub, these are just a couple I plucked out of the mix. <br />
           Please feel free to check out my other work.
         </p>
-        <a href="https://github.com/gabriellemia?tab=repositories" target="_blank">
+        <a className="github-link" href="https://github.com/gabriellemia?tab=repositories" target="_blank">
           <img className="github-image" src={githubImage} alt="github logo" />
         </a>
       </div>

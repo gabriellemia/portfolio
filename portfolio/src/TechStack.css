@@ -22,3 +22,7 @@
   gap: 20px;
   flex-wrap: wrap;
 }
+
+.icon {
+  width: 60px;
+}

@@ -1,6 +1,6 @@
 .project-title {
   font-family: "Rock Salt", cursive;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   font-size: 25px;
   color: #199dbd;
 }
@@ -12,6 +12,7 @@
 .chat-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   background: #f9f4da;
   font-family: inherit;
   padding: 0.6em 1.3em;
@@ -23,8 +24,8 @@
   border-radius: 0.4em;
   box-shadow: 0.3em 0.3em #199dbd;
   cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 /* .chat-section:hover {
@@ -105,6 +106,45 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+}
+
+@keyframes burstEffect {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.burst-element {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.burst-element.in-view {
+  animation: burstEffect 0.5s forwards;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0); /* Start and end position (at the ground) */
+  }
+  40% {
+    transform: translateY(-20px); /* Top of the bounce */
+  }
+  60% {
+    transform: translateY(-10px); /* Bottom of the bounce */
+  }
+}
+
+.github-link {
+  display: inline-block;
+  animation: bounce 1s infinite;
 }
 
 @media (max-width: 720px) {

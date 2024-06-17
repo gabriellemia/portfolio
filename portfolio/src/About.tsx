@@ -1,7 +1,18 @@
 import "./About.css";
 import ProfileImage from "./ProfileImage";
+import { useEffect, useState } from "react";
 
 function About() {
+  const [isTyped, setIsTyped] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsTyped(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <div id="about-section">
