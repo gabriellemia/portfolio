@@ -8,7 +8,7 @@ function About() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsTyped(true);
-    }, 3000);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,7 +20,7 @@ function About() {
           <ProfileImage />
         </div>
         <div className="text-section">
-          <h1 className="intro">Hi there, I'm Gaby!</h1>
+          {isTyped ? <h1 className="intro">Hi there, I'm Gaby!</h1> : null}
           <p className="about-text">
             I'm a London based junior full-stack developer with a unique background spanning biomedical research and
             outdoor education. While my academic journey began with a degree in Wildlife Photography, my path eventually
