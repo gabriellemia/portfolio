@@ -96,13 +96,12 @@ body {
 }
 
 main {
-  margin: 20px 150px;
-  max-width: 1256px;
+  margin: 0 20%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1190px) {
   main {
     padding: 0;
-    margin: 20px 20px;
+    margin: 0 20px;
   }
 }

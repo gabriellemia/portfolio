@@ -1,15 +1,19 @@
 .project-title {
-  font-family: "Rock Salt", cursive;
+  /* font-family: "Rock Salt", cursive; */
   padding-bottom: 50px;
-  font-size: 25px;
+  font-size: 45px;
+  font-weight: 400;
   color: #199dbd;
 }
 
 #project-section {
-  margin-top: 100px;
+  padding-top: 150px;
+  /* height: 100vh;
+  align-items: center; */
 }
 
 .chat-section {
+  max-width: 1256px;
   display: flex;
   align-items: center;
   justify-content: center;

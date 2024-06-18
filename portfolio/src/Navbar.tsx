@@ -27,7 +27,7 @@ function Navbar() {
     <>
       <div className="header">
         <div className="head-title">
-          <h1>Gabrielle Mia</h1>
+          <h1>GM</h1>
           {/* <img src={logo}></img> */}
         </div>
         <div className="navigation">

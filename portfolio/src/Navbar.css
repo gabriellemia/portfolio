@@ -1,5 +1,10 @@
 .header {
+  width: 100vw;
   display: flex;
+  margin: 0 20px 0 20px;
+  background-color: #0f0d0e;
+  position: fixed;
+  padding-bottom: 10px;
 }
 
 .head-title {
@@ -7,8 +12,9 @@
   justify-content: flex-start;
   color: #1b9dbe;
   font-family: "Rock Salt", cursive;
-  font-size: 20px;
-  margin: 30px;
+  font-size: 38px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 .navigation {
@@ -23,7 +29,6 @@
   color: #f9f4da;
   background-color: #0f0d0e;
   padding-bottom: 20px;
-  border-radius: 10px;
 }
 
 /* .head-logo img {
@@ -76,6 +81,11 @@
 @media (max-width: 1024px) {
   .header {
     display: flex;
+    margin-left: 0;
+  }
+
+  .head-title {
+    font-size: 20px;
   }
 
   /* .head-logo img {
@@ -85,27 +95,29 @@
 
   .navigation {
     background-color: #0f0d0e;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    /* margin-right: 10px; */
-    right: 10px;
+    /* width: 80px;
+    height: 80px; */
+    /* border-radius: 50%; */
+    margin-top: 10px;
+    right: 20px;
     padding-bottom: 0;
   }
+
   .menu {
     display: none;
   }
+
   .menu.open {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 20px;
-    right: 25px;
+    top: 10px;
+    right: 20px;
     background-color: #0f0d0e;
     border-radius: 10px;
     color: #f9f4da;
     overflow: hidden;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     /* margin-top: 20px; */
     padding-bottom: 20px;
   }
@@ -142,6 +154,6 @@
     cursor: pointer;
     text-align: end;
     /* padding-right: 10px; */
-    padding-top: 5px;
+    /* padding-top: 5px; */
   }
 }

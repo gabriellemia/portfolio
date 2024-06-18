@@ -3,25 +3,23 @@
 import "./App.css";
 import Navbar from "./Navbar.tsx";
 import About from "./About.tsx";
-import ProjectBtn from "./ProjectBtn.tsx";
 import Projects from "./Projects.tsx";
 import TechStack from "./TechStack.tsx";
 import Social from "./Social.tsx";
 
 function App() {
   return (
-    <>
+    <div className="main-container">
       <header>
         <Navbar />
       </header>
       <main>
-        <ProjectBtn />
         <About />
         <Projects />
         <TechStack />
         <Social />
       </main>
-    </>
+    </div>
   );
 }
 

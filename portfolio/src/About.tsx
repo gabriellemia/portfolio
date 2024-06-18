@@ -1,4 +1,5 @@
 import "./About.css";
+import ProjectBtn from "./ProjectBtn.tsx";
 import ProfileImage from "./ProfileImage";
 import { useEffect, useState } from "react";
 
@@ -20,6 +21,7 @@ function About() {
           <ProfileImage />
         </div>
         <div className="text-section">
+          <ProjectBtn />
           {isTyped ? <h1 className="intro">Hi there, I'm Gaby!</h1> : null}
           <p className="about-text">
             I'm a London based junior full-stack developer with a unique background spanning biomedical research and
