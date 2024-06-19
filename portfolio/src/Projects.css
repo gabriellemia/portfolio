@@ -153,6 +153,10 @@
 }
 
 @media (max-width: 720px) {
+  #project-section {
+    padding-top: 150px;
+  }
+
   .project-title {
     text-align: center;
   }
