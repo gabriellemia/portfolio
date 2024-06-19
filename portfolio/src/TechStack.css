@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #tech-section {
   padding-top: 150px;
   height: 100vh;
@@ -18,12 +22,62 @@
   font-size: 45px;
   font-weight: 400;
   color: #199dbd;
+  text-shadow: 2px 2px 2px #f9f4da;
+}
+
+.tech-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  padding-bottom: 50px;
 }
 
 .tech-icons {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.tech-arrow {
+  position: absolute;
+  top: calc(100vh + 210vh);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+  color: #199dbd;
+}
+
+.tech-arrow:active {
+  color: #f9f4da;
+}
+
+.tech-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 720px) {
@@ -37,5 +91,9 @@
 
   .icon {
     width: 60px;
+  }
+
+  .tech-arrow {
+    display: none;
   }
 }

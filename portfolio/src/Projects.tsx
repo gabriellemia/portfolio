@@ -60,8 +60,8 @@ function Projects() {
               <br />
               Final project at School of Code with real stakeholders. <br />
               In our team of six, we were partnered with Birmingham Business Magazine to help them optimise their online
-              presence. <br /> Over 4 weeks we built a modernised, responsive website with improved SEO and
-              accessibility and a simple to use content management system.
+              presence. <br /> Over 4 weeks we built a modernised, responsive business news website with improved SEO
+              and accessibility and a content management system that was simple to use for the editors.
             </p>
             <div className="buttons-container">
               <Button url="https://birmingham-biz-kappa.vercel.app/" label="Live site" />

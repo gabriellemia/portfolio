@@ -39,6 +39,9 @@ function About() {
             myself various skills, from juggling to solving the Rubik's Cube.
           </p>
         </div>
+        <div>
+          <a className="down-arrow" href="#project-section"></a>
+        </div>
       </div>
     </>
   );
