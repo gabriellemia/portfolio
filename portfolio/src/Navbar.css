@@ -5,6 +5,7 @@
   background-color: #0f0d0e;
   position: fixed;
   padding-bottom: 10px;
+  z-index: 1;
 }
 
 .head-title {
